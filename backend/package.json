@@ -4,7 +4,7 @@
   "description": "an assignment intv backend",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start ecosystem.config.js --env production",
+    "start": "nodemon src/index.js",
     "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
