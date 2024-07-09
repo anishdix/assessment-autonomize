@@ -1,5 +1,7 @@
 const Joi = require('joi');
 
+
+//validation for post and put requests
 const createUser = {
   body: Joi.object().keys({
     username: Joi.string().required(),

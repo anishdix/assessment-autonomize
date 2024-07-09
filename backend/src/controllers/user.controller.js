@@ -2,7 +2,7 @@ const userService = require('../services/user.service');
 const ApiError = require('../utils/ApiError');
 const httpStatus = require('http-status');
 
-// 1. Accept any GitHub username and save details from the GitHub API into the database.
+//  Accept any GitHub username and save details from the GitHub API into the database.
 const createUser = async (req, res, next) => {
     console.log("inside create")
   try {
@@ -14,7 +14,7 @@ const createUser = async (req, res, next) => {
   }
 };
 
-// 2. Find mutual followers and save them as friends.
+//  Find mutual followers and save them as friends.
 const getMutualFriends = async (req, res, next) => {
   try {
     const { username } = req.params;
@@ -25,7 +25,7 @@ const getMutualFriends = async (req, res, next) => {
   }
 };
 
-// 3. Search the saved data from the database based on username, location etc.
+//  Search the saved data from the database based on username, location etc.
 const searchUsers = async (req, res, next) => {
   try {
     const { username, location } = req.query;
@@ -41,7 +41,7 @@ const searchUsers = async (req, res, next) => {
   }
 };
 
-// 4. Soft delete a record based on a given username from the database.
+//  Soft delete a record based on a given username from the database.
 const softDeleteUser = async (req, res, next) => {
   try {
     const { username } = req.params;
@@ -52,7 +52,7 @@ const softDeleteUser = async (req, res, next) => {
   }
 };
 
-// 5. Update fields like “location”, “blog”, “bio” etc for a given user in the database.
+//  Update fields like “location”, “blog”, “bio” etc for a given user in the database.
 const updateUser = async (req, res, next) => {
   try {
     const { username } = req.params;
@@ -64,7 +64,7 @@ const updateUser = async (req, res, next) => {
   }
 };
 
-// 6. Return list of all users from the database sorted by given fields like “public_repos”, “public_gists”, “followers”, “following”, “created_at” etc.
+//  Return list of all users from the database sorted by given fields like “public_repos”, “public_gists”, “followers”, “following”, “created_at” etc.
 const getUsers = async (req, res, next) => {
     console.log("in get all useres")
   try {

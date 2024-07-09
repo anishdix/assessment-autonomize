@@ -1,3 +1,5 @@
+//user routes layer 
+
 const express = require('express');
 const userController = require('../../controllers/user.controller');
 const validate = require('../../middlewares/validate');

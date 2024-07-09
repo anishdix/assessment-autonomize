@@ -1,3 +1,4 @@
+//service layer for interacting with db
 const User = require('../models/User.model');
 const { getUserFromGitHub, getFollowersFromGitHub, getFollowingFromGitHub } = require('../utils/github');
 const ApiError = require('../utils/ApiError');
